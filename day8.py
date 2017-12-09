@@ -27,6 +27,8 @@ for line in data:
         if all_registers[register] > highest:
             highest = all_registers[register]
 
-print (max(all_registers.values()))
+# part 1
+print(max(all_registers.values()))
 
+# part 2
 print(highest)

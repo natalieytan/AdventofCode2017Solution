@@ -23,6 +23,6 @@ for _ in range(64):
         position=(position%list_size)
 hex_list = []
 for i in range(0, 256, 16):
-    s_hash.append(hex(np.bitwise_xor.reduce(num_list[i:i+16]))[2:])
-answer = ''.join(s_hash)
+    hex_list.append(hex(np.bitwise_xor.reduce(num_list[i:i+16]))[2:])
+answer = ''.join(hex_list )
 print('Part 2', answer)
